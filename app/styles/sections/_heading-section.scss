@@ -1,0 +1,28 @@
+.heading-section {
+  background-color: #5FC18B;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 265px;
+  span {
+    display: inline-block;
+    font-size: 39px;
+    font-family: $osr;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    p {
+      @extend .text-stiles;
+      max-width: 650px;
+      padding-bottom: 50px;
+      &:last-child {
+        padding: 0;
+      }
+    }
+
+  }
+}
+

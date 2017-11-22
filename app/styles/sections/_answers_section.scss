@@ -1,0 +1,24 @@
+.answers-section .container {
+  position: relative;
+  padding-top: 170px;
+  padding-bottom: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  .documents {
+    @extend .answer-stiles;
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+  .camera {
+    @extend .answer-stiles;
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}
+

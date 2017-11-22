@@ -1,0 +1,83 @@
+// bower:scss
+@import "bower_components/bootstrap-grid-sass/bootstrap-grid-sass.scss";
+// endbower
+
+
+
+// modules & sections
+
+@import "modules/sprite";
+@import "functions";
+@import "reset";
+@import "fonts";
+@import "variables";
+
+@import "sections/header";
+@import "sections/head-section";
+@import "sections/answers_section";
+@import "sections/heading-section";
+@import "sections/heading2-section";
+
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+
+html {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  line-height: 1.2;
+}
+
+
+.form-stiles {
+  font-family: $osr;
+  font-size: 14px;
+  color: $formcolor;
+}
+
+
+h2 {
+  font-size: 39px;
+}
+h3 {
+  font-size: 27px;
+}
+
+
+.answer-stiles {
+  width: 400px;
+  h3 {
+    font-family: $ossb;
+    padding-bottom: 20px;
+  }
+  p {
+    font-family: $osr;
+    font-size: 14px;
+    color: $p-grey;
+    line-height: 1.4;
+  }
+
+}
+
+.text-stiles {
+  font-size: 14px;
+  font-family: $osr;
+  color: #fff;
+  line-height: 1.5;
+}

@@ -1,0 +1,24 @@
+.heading2-section {
+  position: relative;
+  background-image: url(../images/bg.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container {
+
+    span {
+      display: inline-block;
+      font-size: 39px;
+      font-family: $osr;
+      color: #fff;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    p {
+      @extend .text-stiles;
+
+    }
+  }
+}
