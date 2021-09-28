@@ -1,23 +1,27 @@
-// bower:scss
+// bower components
 @import "bower_components/bootstrap-grid-sass/bootstrap-grid-sass.scss";
-// endbower
-
-
 
 // modules & sections
-
 @import "modules/sprite";
 @import "functions";
 @import "reset";
 @import "fonts";
 @import "variables";
 
+// styles
 @import "sections/header";
 @import "sections/head-section";
-@import "sections/answers_section";
-@import "sections/heading-section";
-@import "sections/heading2-section";
-
+@import "sections/features-section";
+@import "sections/looking-section";
+@import "sections/director_section";
+@import "sections/attention-section";
+@import "sections/pricing-section";
+@import "sections/download-section";
+@import "sections/footer-section";
+/* Pages */
+@import "sections/aboutUs-section";
+@import "sections/prices-section";
+@import "sections/contacts-section";
 
 
 .browserupgrade {
@@ -26,15 +30,11 @@
   color: #000;
   padding: 0.2em 0;
 }
-
-
-
 html {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
 }
-
 body {
   display: flex;
   position: relative;
@@ -43,41 +43,127 @@ body {
   min-height: 100%;
   line-height: 1.2;
 }
-
-
-.form-stiles {
-  font-family: $osr;
+h1 {
+  font-size: 50px;
+  font-family:$robotolight;
+}
+h5{
+  font-size: 15px;
+  font-family: $robotomedium;
+  color: $headers-color;
+}
+p {
   font-size: 14px;
-  color: $formcolor;
+  font-family: $robotoregular;
+  color: $txt-color;
+  line-height: 150%;
+  display: inline-block;
 }
-
-
-h2 {
-  font-size: 39px;
+.span-header {
+  display: block;
+  font-family: $robotolight;
+  font-size: 32px;
+  color: $headers-color;
 }
-h3 {
-  font-size: 27px;
-}
-
-
-.answer-stiles {
-  width: 400px;
-  h3 {
-    font-family: $ossb;
-    padding-bottom: 20px;
-  }
-  p {
-    font-family: $osr;
-    font-size: 14px;
-    color: $p-grey;
-    line-height: 1.4;
-  }
-
-}
-
-.text-stiles {
-  font-size: 14px;
-  font-family: $osr;
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: #697E7F;
+  font-family: $montserratregular;
+  font-size: 12px;
+  border-radius: 2px;
+  transition: 0.5s;
+  &:hover {
+    background-color: $green;
+  }
+}
+.header-block {
+  h2 {
+    font-weight: normal;
+  }
+}
+.hamburger {
+  z-index: 151;
+  position: fixed;
+  display: none;
+  right: 5%;
+  top: 5%;
+  .hamburger-inner {
+    background-color: $headers-color;
+    &:before {
+      background-color: $headers-color;
+    }
+    &:after {
+      background-color: $headers-color;
+    }
+  }
+}
+.hamburger-menu {
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #2d6e70;
+  width: 100vw;
+  height: 100vh;
+  z-index: 150;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20% 0;
+  top: 0;
+  right: -100vw;
+  .logo {
+    border-right: none;
+    padding-right: 0;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  li {
+    padding-bottom: 15px;
+    text-align: center;
+    margin: auto;
+  }
+  li a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $montserratregular;
+    font-size: 12px;
+    color: #fff;
+  }
+  .hamburger-btn-start {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger-header-menu-phone {
+    display: block;
+    margin: 0 auto;
+    &::before {
+      display: none;
+      span {
+        padding-left: 0;
+      }
+    }
+  }
+}
+.visible {
+  opacity: 1;
+  right: -0;
+}
+html.touch {
+  margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+  .site-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }

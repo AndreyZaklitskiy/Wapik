@@ -1,0 +1,118 @@
+.looking-section {
+  position: relative;
+  background-color: #eef1ec;
+  .container {
+    position: relative;
+    overflow: hidden;
+    span {
+      @extend .span-header;
+      margin-top: 76px;
+      margin-bottom: 20px;
+      text-align: center;
+      &::after {
+        content: '';
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 65px;
+        height: 1px;
+        background-color: $green;
+        margin-top: 15px;
+      }
+    }
+    p {
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 20px;
+      line-height: 22px;
+    }
+  }
+}
+.looking-section-content {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 120px;
+  .iPhone {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 95%;
+    position: absolute;
+    right: 58%;
+  }
+  .looking-section-content-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    max-width: 485px;
+    margin-left: auto;
+    span {
+      @extend .span-header;
+      text-align: left;
+      margin-bottom: 10px;
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+    p {
+      text-align: left;
+      font-size: 14px;
+    }
+    .check {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      p {
+        flex-basis: calc(100% - 26px);
+        text-align: left;
+        margin-bottom: 0;
+      }
+      &::before {
+        content: '';
+        display: inline-block;
+        @include sprite($check-icon);
+        margin-right: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .iPhone {
+    opacity: 0.1;
+  }
+  .looking-section-content {
+    .looking-section-content-text {
+      justify-content: center;
+      margin-right: auto;
+      span {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .iPhone {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .looking-section {
+    .container {
+      span {
+        margin-top: 33px;
+      }
+    }
+  }
+  .looking-section-content {
+    margin-bottom: 60px;
+  }
+}

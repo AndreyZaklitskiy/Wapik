@@ -1,18 +1,36 @@
 @font-face {
-	font-family: 'OpenSans-Bold';
-	src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-		url('../fonts/OpenSans-Bold.woff') format('woff'),
-		url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-family: 'Merriweather-Light';
+  src: url('../fonts/Merriweather-Light.woff2') format('woff2'),
+  url('../fonts/Merriweather-Light.woff') format('woff'),
+  url('../fonts/Merriweather-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-  url('../fonts/OpenSans-Regular.woff') format('woff'),
-  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+  url('../fonts/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/ProximaNova-Bold.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'OpenSans-SemiBold';
-  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
-  url('../fonts/OpenSans-SemiBold.woff') format('woff'),
-  url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+  url('../fonts/Roboto-Medium.woff') format('woff'),
+  url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/Roboto-Regular.woff') format('woff'),
+  url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+  url('../fonts/Roboto-Light.woff') format('woff'),
+  url('../fonts/Roboto-Light.ttf') format('truetype');
 }

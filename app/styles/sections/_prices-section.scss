@@ -1,0 +1,65 @@
+.site-menu_aboutUs {
+  .header-menu {
+    &-phone {
+      span {
+        color: $txt-color;
+      }
+      &::before {
+        @include sprite($prices-phone);
+      }
+    }
+    .logo {
+      color: $headers-color;
+      border-right: 1px solid #83a7a5;
+    }
+  }
+  .site-menu {
+    .header-menu-item {
+      a {
+        color: #83a7a5;
+      }
+    }
+    .btn-start {
+      background-color: $green;
+      &:hover {
+        background-color: $txt-color;
+      }
+    }
+  }
+}
+
+.prices-index3-header {
+  .container {
+    background-image: url(../images/prices/prices-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pricing-plan-block {
+    margin-bottom: 30px;
+    .plan-block-items {
+      background-color: #fff;
+    }
+  }
+  &-text {
+    text-align: center;
+    h2 {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 32px;
+      font-family: $robotolight;
+      color: $headers-color;
+    }
+    p {
+      margin-bottom: 50px;
+    }
+  }
+}
+

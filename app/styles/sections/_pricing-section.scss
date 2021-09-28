@@ -1,0 +1,153 @@
+.pricing-section {
+  .container {
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span {
+      @extend .span-header;
+      text-align: center;
+      margin-bottom: 20px;
+      &::after {
+        content: '';
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 65px;
+        height: 1px;
+        background-color: $green;
+        margin-top: 15px;
+      }
+    }
+    .pricing-p {
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto 40px;
+    }
+    .check-header {
+      font-size: 22px;
+    }
+    .help-header-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .help-header {
+        color: $green;
+      }
+      &::before {
+        content: '';
+        display: block;
+        @include sprite($lifebuoy-icon);
+        margin: 0 auto 20px;
+      }
+    }
+    .pricing-mail {
+      color: $headers-color;
+      font-size: 18px;
+      font-family: $robotoregular;
+      margin: 0 auto;
+    }
+  }
+}
+.pricing-plan-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 762px;
+  border: 1px solid #c1d3d2;
+  margin: 0 auto 80px;
+}
+.plan-block-items {
+  border-right: 1px solid #c1d3d2;
+  height: 360px;
+  width: 100%;
+  max-width: 252px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px auto;
+  h5 {
+    font-size: 15px;
+    font-family: $robotomedium;
+    color: $green;
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 65px;
+    font-family: $montserratregular;
+    margin: 0 auto;
+    color: $headers-color;
+  }
+  h4 {
+    font-family: $robotoregular;
+    font-size: 14px;
+    color: $headers-color;
+    margin: 0 auto 25px;
+  }
+  p {
+    display: block;
+    max-width: 130px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .plan-btn {
+    @extend .btn;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    &:hover {
+      animation: slow 0.4s;
+    }
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+.pricing-check-block {
+  margin: 0 auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .check-mark {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    min-width: 300px;
+    margin: 5px;
+    &::before {
+      content: '';
+      display: inline-block;
+      @include sprite($check-icon);
+      margin-right: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .pricing-check-block {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .pricing-section {
+    .container {
+      padding: 50px 0;
+    }
+  }
+  .pricing-plan-block {
+    flex-direction: column;
+    width: auto;
+  }
+  .plan-block-items {
+    width: 252px;
+    border-right: none;
+    border-bottom: 1px solid #c1d3d2;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

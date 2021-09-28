@@ -1,0 +1,140 @@
+/* Contact Us */
+/*хэдер*/
+.contacts {
+  .container {
+  background-image: none;
+  background-color: #fff;
+}
+  .header-menu {
+    .logo {
+      border-right: 1px solid #83a7a5;
+    }
+  }
+}
+/* оформление карты */
+.map {
+  margin-left: 0;
+  padding-left: 0;
+  iframe {
+    padding-left: 0;
+    width: 100vw;
+  }
+}
+.section-header {
+  text-align: center;
+  h2 {
+    font-size: 38px;
+    font-family: $robotoregular;
+    color: $headers-color;
+    margin-bottom: 20px;
+    &:after {
+      content: '';
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      width: 65px;
+      height: 1px;
+      background-color: #6FB048;
+      margin-top: 15px;
+    }
+  }
+  p {
+    margin-bottom: 70px;
+    font-size: 16px;
+    color: $txt-color;
+    font-family: $robotoregular;
+    max-width: 500px;
+    line-height: 140%;
+  }
+}
+/* оформление формы и контактной информации(headquarter) */
+.touch {
+  margin: 100px 0;
+  &-form {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    input, textarea{
+      padding: 15px;
+      margin-bottom: 20px;
+      font-family: $robotoregular;
+      font-size: 20px;
+      color: $txt-color;
+      border: 1px solid #c1d3d2;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    }
+    &-btn {
+      @extend  .download-btn;
+      width: 200px;
+      height: 40px;
+      background-color: $green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: $montserratregular;
+      font-size: 12px;
+      border-radius: 2px;
+      transition: 0.5s;
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  &-headquarter {
+    border: 2px dashed #c1d3d2;
+    padding: 40px 30px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-family: $robotolight;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: $headers-color;
+
+    }
+    p {
+      position: relative;
+      margin-left: 25px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-family: $robotoregular;
+      display: block;
+    }
+    a {
+      color: $headers-color;
+    }
+    &-address {
+      &:before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 0;
+        display: inline-block;
+        @include sprite($pointer);
+      }
+    }
+    &-phone {
+      &:before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 0;
+        display: inline-block;
+        @include sprite($contacts-phone);
+      }
+    }
+    &-mail {
+      &:before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 5px;
+        display: inline-block;
+        @include sprite($mail);
+      }
+    }
+  }
+}
